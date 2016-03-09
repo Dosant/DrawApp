@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head><!-- Load the Paper.js library -->
+        <link rel="stylesheet" type="text/css" href="./bower_components/milligram/dist/milligram.css">
+        <link rel="stylesheet" type="text/css" href="./styles/index.css">
+        <script type="text/javascript" src="app/jscolor.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <div class="panel">
+            <div class="panel-left">
+                <input class="button button-clear" type="button" id="segment" value="Segment">
+                <input class="button button-clear" type="button" id="ray" value="Ray">
+                <input class="button button-clear" type="button" id="line" value="Line">
+                <input class="button button-clear" type="button" id="polyline" value="Polyline">
+                <input class="button button-clear" type="button" id="rectangle" value="Rectangle">
+                <input class="button button-clear" type="button" id="ellipse" value="Ellipse">
+                <input class="button button-clear" type="button" id="circle" value="Circle">
+                <input class="button button-clear" type="button" id="polygon" value="Polygon">
+                <input class="button button-clear" type="button" id="triangle" value="Triangle">
+                <input class="button button-clear" type="button" id="square" value="Square">
+            </div>
+            <div class="panel-right">
+                <span class="input-group">
+                    <input  disabled id="set-stroke-color"
+                            class="jscolor {valueElement:null,value:'#F7CAC9', onFineChange:'setStrokeColor(this)'}"
+                            style="width:20px; height:20px;">
+                    </input>
+                    <input class="button button-clear" type="button" id="stroke" value="Stroke">
+                </span>
+                <span class="input-group">
+                    <input  disabled id="set-fill-color"
+                            class="jscolor {valueElement:null,value:'#F7CAC9', onFineChange:'setFillColor(this)'}"
+                            style="width:20px; height:20px;">
+                    </input>
+                    <input class="button button-clear" type="button" id="fill" value="Fill">
+                </span>
+                <input class="button button-clear" type="button" id="clear" value="Clear">
+            </div>
+        </div>
+        <canvas id="myCanvas" resize="true"></canvas>
+    </body>
+    <script type="text/javascript" src="bundle.js"></script>
+
+
+</html>

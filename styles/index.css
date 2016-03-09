@@ -1,0 +1,49 @@
+html,
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+canvas {
+    background-color: #eaeaea;
+}
+
+.panel {
+    width: 100%;
+    min-height: 60px;
+    border-bottom: 2px solid #92A8D1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel-left{
+    align-items: center;
+}
+.panel-right{
+    align-items: center;
+    flex-flow: row-reverse;
+}
+
+
+input[type='button'].button.button-clear {
+    color: #92A8D1;
+}
+input[type='button'].button.button-clear.active,
+input[type='button'].button.button-clear:hover{
+    color: #F7CAC9;
+}
+
+.panel .button{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.input-group>.button{
+    padding-left: 0;
+}
